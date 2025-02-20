@@ -14,6 +14,7 @@ public class Menu {
 		System.out.println("MENU PRINCIPAL");
 		System.out.println("1. ASCENSOR PISO ");
 		System.out.println("2. ASCENSOR PISO Y PESO");
+		System.out.println("3. SENSOR DE TEMPERATURA");
 		
 		Integer opcion = this.scanner.nextInt();
 		
@@ -38,6 +39,11 @@ public class Menu {
 			Ascensor2 object = new Ascensor2(scanner);
 			object.iniciarProceso();
 			
+			break;
+			
+		case 3: 
+			SensorTemperatura sensor = new SensorTemperatura(scanner);
+			sensor.iniciarProceso();
 			break;
 
 		default:
